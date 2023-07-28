@@ -1,0 +1,141 @@
+/* 
+
+- Colors -
+
+Grey color:
+#dfdfdb
+#333
+
+Section color:
+#f7f7f7
+
+Primary:
+#ecf3ec
+
+Accent color:
+#438244
+
+Tints:
+#82a35a
+
+
+- Fonts -
+
+Inria Sans
+- Font weights:
+Default: 400
+Medium: -
+Semi-bold: -
+Bold: 700
+
+Inria Serif
+- Font weights:
+Default: 400
+Medium: -
+Semi-bold: -
+Bold: 700
+
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inria Sans", sans-serif;
+  /* font-family: 'Inria Serif', serif; */
+  font-weight: 400;
+  color: #333;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ****************************** */
+/* GENERAL REUSABLE COMPONENTS */
+/* ****************************** */
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+
+  background-color: #438244;
+  color: #fff;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #2f5b30;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #438244;
+  text-decoration: none;
+  /* border-bottom: 1px solid currentColor; */
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #2f5b30;
+  /* border-bottom: 1px solid transparent; */
+}
